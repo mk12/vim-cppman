@@ -66,6 +66,7 @@ function! s:Cppman(page)
   setlocal buftype=nofile
   setlocal bufhidden=delete
   setlocal noswapfile
+  setlocal iskeyword+=:,=,~,[,],*,!,<,>                        
 
   let g:page_name = a:page
 
